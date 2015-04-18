@@ -1,5 +1,5 @@
 <?php
-
+// lol 2
 session_start();
 // on appel le model et le controleur principal et on se connecte a la bdd
 require('config/db_connect.php');
