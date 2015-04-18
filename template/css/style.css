@@ -1,0 +1,376 @@
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
+body{
+	background-image: url(../images/template/background.png);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wavybg-wrapper{
+	width: 100%;
+	height: 500px;	
+	position: absolute;
+	top:0;
+	right:0;
+	z-index: -2;
+}
+
+#smoker{
+		position: absolute;
+		top: 150px;
+		right:0;
+		width: 459px;
+		height:450px;
+		background-image: url(../images/template/smoker.png);
+		z-index: -1;
+	}
+
+#ie_message {
+  display: none;
+}
+#messageCenter {
+  position: absolute;
+  z-index: 5;
+  top: 200px;
+  left: 50%;
+}
+#javamessagebox{
+	position:absolute;
+	z-index:9999;
+	left:-250px;
+	width:500px;
+	padding:50px 20px;
+	background:#0d1014;
+	border:2px solid #f00;
+	color:#f00;
+}
+#header{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background-color:transparent;
+}
+
+#logo{
+	width: 200px;
+	height: 60px;
+	margin: 20px 40px;
+	float: left;
+}
+
+#ressources{
+	height: 50px;
+	margin: 25px 20px;
+	width: 500px;
+	float: left;
+}
+
+#ressources span{
+	margin:0 10px;
+}
+
+
+#main {
+  width: 1000px;
+  min-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+/******************* Menu Left *******************************/
+#navbar{
+  background-color: transparent;
+  float: left;
+  width: 150px;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+  margin-right: -10px;
+  margin-top: 40px;
+}
+.navLeft li {
+  height: 29px;
+  list-style: none;
+  float: left;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+.navLeft a,.navLeft a:link,.navLeft a:visited {
+  color: #767f88;
+  display: block;
+  font: bold 11px/25px verdana,arial,helvetica,sans-serif;
+  text-decoration: none;
+}
+.navLeft a.menubutton:link, .navLeft a.menubutton:visited, .navLeft a.menubutton:hover, .navLeft a.menubutton:active {
+  background: url("http://gf1.geo.gfsrv.net/cdn3d/7254217d794fbb729c93b84a30f6cb.png") -374px -258px no-repeat;
+  height: 29px;
+  text-align: center;
+  line-height: 25px;
+  width: 136px;
+}
+.navLeft a.menubutton:hover, .navLeft a.menubutton:active {
+  background-position: -374px -287px;
+  color: #fff;
+}
+.premiumHighligt span {
+  color: #ffd700;
+}
+.linkLeft a{
+	color: #fff;
+}
+
+/******************************** Content ********************************/
+#content{
+	background: #444;
+	opacity: 0.97;
+	margin-top:20px;
+	float:left;
+	margin: 20px;
+	width: 800px;
+	min-height:500px; 
+	z-index: 1;
+	padding: 10px;
+}
+
+
+/******************************** Panel Tab/button ********************************/
+.tab {
+  	background: url(../images/slide/tab_b.png) repeat-x 0 0;
+	height: 42px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 42px;
+	margin: 0;
+	right: 150px;
+  	color: white;
+  	font-size: 12px;
+	text-align: center;
+}
+
+.tab ul.login li.left {
+  	background: url(../images/slide/tab_l.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.tab ul.login li.right {
+  	background: url(../images/slide/tab_r.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.tab ul.login li {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(../images/slide/tab_m.png) repeat-x 0 0;
+}
+
+.tab ul.login li a {
+	color: #15ADFF;
+}
+
+.tab ul.login li a:hover {
+	color: white;
+}
+
+.tab .sep {color:#414141}
+
+.tab a.open, .tab a.close {
+	height: 20px;
+	line-height: 20px!important;
+	padding-left: 27px!important;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	top: 11px;
+}
+
+.tab a.open {background: url(../images/slide/bt_open.png) no-repeat left 0;}
+.tab a.close {background: url(../images/slide/bt_close.png) no-repeat left 0;}
+.tab a:hover.open {background: url(../images/slide/bt_open.png) no-repeat left -19px;}
+.tab a:hover.close {background: url(../images/slide/bt_close.png) no-repeat left -19px;}
+
+/* sliding panel */
+#toppanel {
+    position: absolute;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#panel {
+	width: 100%;
+	color: #999999;
+	background: #272727;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+	padding-bottom:15px;
+}
+
+#panel h1 {
+	font-size: 1.6em;
+	padding: 5px 0 10px;
+	margin: 0;
+	color: white;
+}
+
+#panel h2{
+	font-size: 1.2em;
+	padding: 10px 0 5px;
+	margin: 0;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+#panel p {
+	margin: 5px 0;
+	padding: 0;
+}
+
+
+#panel a {
+	text-decoration: none;
+	color: #15ADFF;
+	
+}
+
+#panel a:hover {
+	color: white;
+}
+
+#panel a-lost-pwd {
+	display: block;
+	float: left;
+}
+
+#panel .content {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+}
+
+#panel .content .left {
+	width: 280px;
+	float: left;
+	padding: 0 15px;
+	border-left: 1px solid #333;
+}
+
+#panel .content .right {
+	border-right: 1px solid #333;
+}
+
+#panel .content form {
+	margin: 0 0 10px 0;
+}
+
+#panel .content label {
+	float: left;
+	padding-top: 8px;
+	clear: both;
+	width: 100px;
+
+}
+
+#panel .content input.field {
+	border: 1px #1A1A1A solid;
+	background: #414141;
+	margin-right: 5px;
+	margin-top: 4px;
+	width: 160px;
+	color: white;
+	height: 16px;
+}
+
+#panel .content input:focus.field {
+	background: #545454;
+}
+
+/* BUTTONS */
+/* Login and Register buttons */
+#panel .content input.bt_login,
+#panel .content input.bt_register {
+	display: block;
+	float: left;
+	clear: left;
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#panel .content input.bt_login {
+	width: 74px;
+	background: transparent url(../images/slide/bt_login.png) no-repeat 0 0;
+}
+
+#panel .content input.bt_register {
+	width: 94px;
+	color: white;
+	background: transparent url(../images/slide/bt_register.png) no-repeat 0 0;
+}
+
+#panel .content .err{
+	color:red;
+}
+
+#panel .lost-pwd {
+	display: block;
+	float:left;
+	clear: right;
+	padding: 15px 5px 0;
+	font-size: 0.95em;
+	text-decoration: underline;
+}
+
+/******************************** FOOTER ********************************/
+#siteFooter a:hover{color:#9c0;text-decoration:none}
+#siteFooter{background:transparent url("../images/template/footer_bg.gif") repeat-x 0 0;color:#848484;font:normal 10px Verdana,Arial,Helvetica,sans-serif;height:19px;line-height:19px;text-align:center;position:fixed;bottom:0;z-index:999999;width:100%;clear:both}
+#siteFooter a,#siteFooter a:link{color:#848484;margin:0 5px;text-decoration:none}
